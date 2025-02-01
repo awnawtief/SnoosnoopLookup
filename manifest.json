@@ -1,0 +1,16 @@
+{
+        "manifest_version": 3,
+        "name": "Snoosnoop Reddit Lookup",
+        "version": "1.0",
+        "description": "Right-click a Reddit username to open their Snoosnoop profile.",
+        "permissions": ["contextMenus", "activeTab"],
+        "background": {
+            "service_worker": "background.js"
+        },
+        "host_permissions": ["*://*.reddit.com/*"],
+        "icons": {
+            "16": "icon.png",
+            "48": "icon.png",
+            "128": "icon.png"
+        }
+    }
