@@ -25,6 +25,9 @@ This Chrome extension allows users to **right-click on a Reddit username** and o
 
 **Created with love by Eva Singho ❤️**
 https://paypal.me/makcikeva?country.x=MY&locale.x=en_US
+https://github.com/awnawtief/
+https://ko-fi.com/testwritenull
+
 
 
 
