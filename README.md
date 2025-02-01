@@ -1,8 +1,11 @@
 # SnoosnoopLookup
 Snoosnoop Reddit Lookup: to be used between reddit and snoosnoop.com
 
-Bookmarklet for SnooSnoop.com:
+Options:
+1. download the files from github
+2. use this bookmarklet below, but you have to load the user page before clicking:
 
+Bookmarklet for SnooSnoop.com:
 javascript:(function() {
 var username = location.href.match(/reddit\.com\/user\/([^\/]+)/);
 if (username) {
