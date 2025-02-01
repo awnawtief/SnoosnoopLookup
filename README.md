@@ -2,8 +2,11 @@
 Snoosnoop Reddit Lookup: to be used between reddit and snoosnoop.com
 
 Check out MemoryEmptyAgain:
+
 https://snoosnoop.com/
+
 https://www.reddit.com/user/MemoryEmptyAgain/
+
 https://ko-fi.com/memoryemptyagain
 
 
