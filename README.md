@@ -1,9 +1,25 @@
 # SnoosnoopLookup
 Snoosnoop Reddit Lookup: to be used between reddit and snoosnoop.com
 
+Bookmarklet for SnooSnoop.com:
+
+javascript:(function() {
+var username = location.href.match(/reddit\.com\/user\/([^\/]+)/);
+if (username) {
+window.open('https://snoosnoop.com/u/' + username[1], '_blank');
+} else {
+alert("This doesn't seem to be a Reddit user page.");
+}
+})();
+
+
+
+============================
 Check out MemoryEmptyAgain:
 
 https://snoosnoop.com/
+
+https://www.reddit.com/r/snoosnoop/
 
 https://www.reddit.com/user/MemoryEmptyAgain/
 
