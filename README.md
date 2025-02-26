@@ -52,8 +52,8 @@ javascript:(function() {
 ## 🛡️ Security & Transparency  
 
 Because we believe in snooping responsibly, we’ve run a VirusTotal scan to keep things clean:  
-🔍 **[VirusTotal Scan Results](https://www.virustotal.com/gui/file/3d115b9f24f83d0d563f5a6e60cb406428aa68e19d28940bcc91cb6315dc327)**  
-📁 **[RAR File Analysis](https://www.virustotal.com/gui/file-analysis/ODlIYWQxZTQwYmM3Yg0YjJiNmEwMDk5MjZiZmJnNzM6MTczODM3NTQ3Mg==)**  
+🔍 **[VirusTotal Scan Results](https://www.virustotal.com/gui/file/1df5bc226e9f0153666eec9f3f10bd62bdf762ef6524c4f2ea9c67922541c857)**  
+📁 **[RAR File Analysis](https://www.virustotal.com/gui/file-analysis/NGE5Nzk5ZmJhODk5YmYzNzNjZTI0YmY2ZjZhMmYxNmU6MTc0MDUzNTcwMw==)**  
 
 ---
 
