@@ -9,7 +9,7 @@ SnoosnoopLookup is a simple tool designed to help you look up Reddit users on [S
 
 [SnooSnoop](https://snoosnoop.com) is a **resurrection of u/onionmelt's SnoopSnoo** website, which was discontinued due to changes in Blockspring’s API.  
 
-- 🏗️ **Backend:** Based on the [Sherlock](https://github.com/sherlock-project/sherlock) framework, rewritten in **Python 3** with additional modifications.  
+- 🏗️ **Backend:** Based on the [Sherlock](https://github.com/orionmelt/sherlock) framework, rewritten in **Python 3** with additional modifications.  
 - 🎨 **Frontend:** A rewrite of the **SnoopSnoo** project, converted from **Flask/JavaScript/D3.js** to **Django/Python/Highcharts**.  
 - 📡 **Functionality:** Fetches data from the **Reddit API** for public user analysis.  
 
@@ -45,7 +45,7 @@ javascript:(function() {
 
 - 🧠 **Natural Language Processing:** [TextBlob](https://textblob.readthedocs.io/en/dev/) and [NLTK](https://www.nltk.org/)  
 - 📊 **Data Visualization:** Highcharts and D3.js  
-- 🔍 **Backend Framework:** [Sherlock](https://github.com/sherlock-project/sherlock)  
+- 🔍 **Backend Framework:** [Sherlock](https://github.com/orionmelt/sherlock)  
 
 ---
 
