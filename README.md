@@ -1,39 +1,79 @@
-# SnoosnoopLookup
-Snoosnoop Reddit Lookup: to be used between reddit and snoosnoop.com
+# 🕵️ SnoosnoopLookup  
+*"Because sometimes, you just gotta snoop the snoopers."*  
 
-Options:
-1. download the files from github
-2. use this bookmarklet below, but you have to load the user page before clicking:
+SnoosnoopLookup is a simple tool designed to help you look up Reddit users on [SnooSnoop.com](https://snoosnoop.com). Whether you're verifying old accounts or just curious about someone's Reddit history, this tool makes it quick and easy.  
 
-Bookmarklet for SnooSnoop.com:
-javascript:(function() {
-var username = location.href.match(/reddit\.com\/user\/([^\/]+)/);
-if (username) {
-window.open('https://snoosnoop.com/u/' + username[1], '_blank');
-} else {
-alert("This doesn't seem to be a Reddit user page.");
-}
+---
+
+## 🔍 About SnooSnoop  
+
+[SnooSnoop](https://snoosnoop.com) is a **resurrection of u/onionmelt's SnoopSnoo** website, which was discontinued due to changes in Blockspring’s API.  
+
+- 🏗️ **Backend:** Based on the [Sherlock](https://github.com/sherlock-project/sherlock) framework, rewritten in **Python 3** with additional modifications.  
+- 🎨 **Frontend:** A rewrite of the **SnoopSnoo** project, converted from **Flask/JavaScript/D3.js** to **Django/Python/Highcharts**.  
+- 📡 **Functionality:** Fetches data from the **Reddit API** for public user analysis.  
+
+---
+
+## 🚀 How to Use SnoosnoopLookup  
+
+### Option 1: Manual Download  
+1. Download the files from this GitHub repository.  
+2. Follow the setup instructions (see below).  
+
+### Option 2: Bookmarklet (The Lazy Snooper Method™)  
+Use this bookmarklet to instantly check a Reddit user's profile on SnooSnoop. Before clicking, **make sure you're on a Reddit user’s page** (`reddit.com/user/username`), or it won’t work!  
+
+#### 📌 Bookmarklet Code:  
+Simply create a new bookmark in your browser and set the following as the URL:  
+
+```js
+javascript:(function() { 
+    var username = location.href.match(/reddit.com\/user\/([^\/]+)/); 
+    if (username) { 
+        window.open('https://snoosnoop.com/u/' + username[1], '_blank'); 
+    } else { 
+        alert("Oops! This doesn’t seem to be a Reddit user page."); 
+    } 
 })();
+```
+*(No cookies, no tracking, just snoopin’ made simple.)*  
 
+---
 
+## 🏆 Credits  
 
-============================
+- 🧠 **Natural Language Processing:** [TextBlob](https://textblob.readthedocs.io/en/dev/) and [NLTK](https://www.nltk.org/)  
+- 📊 **Data Visualization:** Highcharts and D3.js  
+- 🔍 **Backend Framework:** [Sherlock](https://github.com/sherlock-project/sherlock)  
 
-Check out MemoryEmptyAgain:
+---
 
-https://snoosnoop.com/
+## 🛡️ Security & Transparency  
 
-https://www.reddit.com/r/snoosnoop/
+Because we believe in snooping responsibly, we’ve run a VirusTotal scan to keep things clean:  
+🔍 **[VirusTotal Scan Results](https://www.virustotal.com/gui/file/3d115b9f24f83d0d563f5a6e60cb406428aa68e19d28940bcc91cb6315dc327)**  
+📁 **[RAR File Analysis](https://www.virustotal.com/gui/file-analysis/ODlIYWQxZTQwYmM3Yg0YjJiNmEwMDk5MjZiZmJnNzM6MTczODM3NTQ3Mg==)**  
 
-https://www.reddit.com/user/MemoryEmptyAgain/
+---
 
-https://ko-fi.com/memoryemptyagain
+## ⚠️ Disclaimer  
 
+🔸 **All data analyzed is public.** SnooSnoop does not store private Reddit data such as:  
+- Passwords 🔒  
+- Subreddit subscriptions 📜  
+- Upvotes/downvotes ⬆️⬇️  
+- Private subreddit activity 🚫  
 
-VirusTotal result:
-https://www.virustotal.com/gui/file/3d151b9f24f83d0d563f5a6e60cb406428aa68e19d289840bcc91cb6315dc327
+This website is **not affiliated with Reddit** in any way. Use responsibly and ethically.  
 
-rar file: https://www.virustotal.com/gui/file-analysis/ODllYWQxZTQwYmM3YTg0YjJiNmEwMDk5MjZiZmJmNzM6MTczODM3NTQ3Mg==
+---
 
+## 💡 Support & More Info  
 
-disclaimer: i have no control on what you will do with it, but make sure it's a responsible one. donate to the creator so he can keep the website alive for a long time for us redditors.
+- 🌐 **Website:** [SnooSnoop](https://snoosnoop.com/)  
+- 🛡️ **Subreddit:** [r/Snoosnoop](https://www.reddit.com/r/snoosnoop/)  
+- 👤 **Creator's Reddit Profile:** [MemoryEmptyAgain](https://www.reddit.com/user/MemoryEmptyAgain/)  
+- ☕ **Support Development:** [Donate on Ko-fi](https://ko-fi.com/memoryemptyagain)  
+
+*"Happy snooping, but keep it ethical!"* 🕶️ 
