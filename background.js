@@ -1,15 +1,23 @@
-chrome.contextMenus.create({
+chrome.runtime.onInstalled.addListener(() => {
+    chrome.contextMenus.create({
         id: "snoosnoopUser",
         title: "Snoosnoop This User",
         contexts: ["link"],
-        targetUrlPatterns: ["*://www.reddit.com/user/*"]
+        targetUrlPatterns: [
+            "*://reddit.com/user/*",
+            "*://www.reddit.com/user/*",
+            "*://old.reddit.com/user/*",
+            "*://np.reddit.com/user/*",
+            "*://private.reddit.com/user/*"
+        ]
     });
+});
 
-    chrome.contextMenus.onClicked.addListener(function(info, tab) {
-        if (info.menuItemId === "snoosnoopUser") {
-            var username = info.linkUrl.match(/reddit\.com\/user\/([^\/]+)/);
-            if (username) {
-                chrome.tabs.create({ url: "https://snoosnoop.com/u/" + username[1] });
-            }
+chrome.contextMenus.onClicked.addListener((info, tab) => {
+    if (info.menuItemId === "snoosnoopUser") {
+        var match = info.linkUrl.match(/reddit\.com\/user\/([^\/?]+)/);
+        if (match) {
+            chrome.tabs.create({ url: "https://snoosnoop.com/u/" + match[1] });
         }
-    });
+    }
+});
